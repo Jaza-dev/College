@@ -15,7 +15,7 @@ int main() {
 		Student* student;
 		int option, p, bucketCap;
 		string key;
-		ifstream input("students_10000.csv");
+		ifstream input("students_500.csv");
 		getline(input, key); //preskacem zaglavlje
 		while (true) {
 			cout << "1. Pronaci zadati kljuc" << endl;
@@ -165,7 +165,7 @@ int main() {
 		Student* student;
 		int option, p, b;
 		string key;
-		ifstream input("students_10000.csv");
+		ifstream input("students_500.csv");
 		getline(input, key); //preskacem zaglavlje
 		while (true) {
 			cout << "1. Pronaci zadati kljuc" << endl;
