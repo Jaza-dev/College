@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Snake game</title>
+    <script src="zmijica-dodatno/js/jquery-3.6.0.js"></script>
+    <link rel="stylesheet" href="zmijica-dodatno/css/bootstrap.css">
+    <script src="zmijica-dodatno/js/jquery-3.6.0.js"></script>
+    <script src="zmijica-dodatno/js/bootstrap.js"></script>
+    <script src="zmijica-igra.js"></script>
+</head>
+<body class="bg-dark container-fluid">
+    <div class="row">
+        <div class="col-12">
+            <br>
+            <p class="h1 text-light display-5 text-center">Welcome to Snake game</p>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-12 text-light text-center"><br><br>
+            <p>Snake needs your help! Winter is comming, and snake needs to eat enough food to survive snowy and cold weather. <br>In order to control snake you need to use WASD or arrows on your keyboard. The snake must not strike itself or it will eat itself. Also it cant leave field of game or it will be eaten by other predators.<br> Food will appear on field hurry to eat it fast! Every time sanke eats food it grows and you will be awarded one point. <br> Additionaly every ten seconds super food will appear it will stay on field three seconds and if you manage to eat it you will be awarded ten points!</p>
+        </div>
+        
+    </div>
+    <div class="row">
+        <div class="col-2"></div>
+        <div class="col-4"><br><br>
+            <p class="text-light display-9 text-center">Select size:</p>
+            <table class="d-flex justify-content-center">
+                <tr>
+                    <td>
+                        <input type="radio" class="btn-check" name="size" id="16x16" autocomplete="off" checked>
+                        <label class="btn btn-light" for="16x16">16x16</label>
+                    </td>
+                    <td>
+                        <input type="radio" class="btn-check" name="size" id="18x18" autocomplete="off">
+                        <label class="btn btn-light" for="18x18">18x18</label>
+                    </td>
+                    <td>
+                        <input type="radio" class="btn-check" name="size" id="22x22" autocomplete="off">
+                        <label class="btn btn-light" for="22x22">22x22</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="radio" class="btn-check" name="size" id="24x24" autocomplete="off">
+                        <label class="btn btn-light" for="24x24">24x24</label>
+                    </td>
+                    <td>
+                        <input type="radio" class="btn-check" name="size" id="26x26" autocomplete="off">
+                        <label class="btn btn-light" for="26x26">26x26</label>
+                    </td>
+                    <td>
+                        <input type="radio" class="btn-check" name="size" id="28x28" autocomplete="off">
+                        <label class="btn btn-light" for="28x28">28x28</label>
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <div class="col-4 text-center"><br><br>
+            <p class="text-light display-9 text-center">Select difficulty:</p>
+            <input type="radio" class="btn-check" name="difficulty" id="easy" autocomplete="off" checked>
+            <label class="btn btn-success" for="easy">Easy</label>
+            <input type="radio" class="btn-check" name="difficulty" id="medium" autocomplete="off">
+            <label class="btn btn-primary" for="medium">Medium</label>
+            <input type="radio" class="btn-check" name="difficulty" id="hard" autocomplete="off">
+            <label class="btn btn-danger" for="hard">Hard</label>
+        </div>
+    </div>
+    <div class="col-2"></div>
+    <br><br>
+    <div class="row justify-content-center">
+        <div class="col-4 text-center">
+            <button class="btn btn-secondary" id="show_resaults">Show results</button>
+        </div>
+    </div>
+    <br>
+    <div class="row justify-content-center">
+        <div class="col-4 text-center">
+            <button class="btn btn-success btn-lg" id="start_game">START THE GAME</button>
+        </div>
+    </div>
+</body>
+</html>
